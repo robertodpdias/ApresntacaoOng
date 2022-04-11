@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="list(),getfunc()">
+    <header>
+        <div class="header">
+            <ul class="nav-bar">
+                <li>
+                    <h2>Casa Acolhedora Irmã Antonia</h2>
+                </li>
+
+            </ul>
+        </div>
+
+    </header>
+    <section>
+        <div class="menuJS down" onclick="abrirMenu()">
+            <img src="../../Assets/icones/hamburger.png" alt="Teste">
+        </div>
+        <div class="menucontent">
+            <div class="user">
+                <ul class="useritens">
+                    <li onclick="closeMenu()">
+                        <h2>X</h2>
+                    </li>
+                    <li><img src="../../Assets/icones/user.png" alt="user" class="userimg"></li>
+                    <li>
+                        <p class="Username">Usuario</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul class="pageList">
+                    <li class="Assistencia">
+                        <p>Assistencia</p>
+                    </li>
+                    <li class="Assistidos">
+                        <p>Assitidos</p>
+                    </li>
+                    <li class="Funcionario">
+                        <p>Funcionarios</p>
+                    </li>
+                    <li class="Lancamentos">
+                        <p>Financeiro</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="imgitens">
+                <ul class="imglist">
+                    <li><img src="../../Assets/icones/gear.png" alt="" class="config"></li>
+                    <li><img src="../../Assets/icones/logout.png" alt="" class="logout"></li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="styleBall-bottom-right"></div>
+                <div class="styleBall-bottom-left"></div>
+                <div class="styleBall-top-right"></div>
+                <div class="styleBall-top-left"></div>
+                <ul>
+
+                    <li><img src="../../Assets/icones/user.png" alt="User" id="Funcfoto"></li>
+                    <li>
+                        <p class="adcFoto" style="font-size:16px;font-weight: bold;text-decoration: underline;">Selecionar nova Foto 📸</p>
+                        <input type="file" name="" id="inpFoto" hidden accept="image/png, image/gif, image/jpeg" />
+                    </li>
+                    <li><button class="btn-ft" onclick="cadastrarFotoDepois()">Atualizar Foto</button></li>
+                </ul>
+            </div>
+            <div class="cardForm">
+                <div class="familia">
+                    <div class="famform">
+                        <div class="EditarDados">
+                            <ul>
+                                <input type="text" placeholder="Matricula..." id="Matricula">
+                            </ul>
+                            <ul>
+                                <input type="text" placeholder="Data de Demissao..." id="Data">
+                            </ul>
+                            <ul>
+                                <input type="text" placeholder="Cargo..." id="cargo">
+                            </ul>
+                        </div>
+                        <div class="DadosFuncionario">
+                            <ul>
+                                <li>Nome: </li>
+                                <li class="getNome"></li>
+                            </ul>
+                            <ul>
+                                <li>Email: </li>
+                                <li class="getEmail"></li>
+                            </ul>
+                            <ul>
+                                <li>Matricula: </li>
+                                <li class="getMatricula"></li>
+                            </ul>
+                            <ul>
+                                <li>RG: </li>
+                                <li class="getRG"></li>
+                            </ul>
+                            <ul>
+                                <li>CPF: </li>
+                                <li class="getCPF"></li>
+                            </ul>
+                            <ul>
+                                <li>Nascimento</li>
+                                <li class="getDataNasc"></li>
+                            </ul>
+                            <ul>
+                                <li>Cargo: </li>
+                                <li class="getCargo"></li>
+                            </ul>
+                            <ul>
+                                <li>Sexo: </li>
+                                <li class="getSexo"></li>
+                            </ul>
+                            <ul>
+                                <li>Admissão:</li>
+                                <li class="getDataAdmissao"></li>
+                            </ul>
+                            <ul>
+                                <li>Demissão:</li>
+                                <li class="getDemissao"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-div">
+                    <button class="btn" onclick=" editarDados() ">Editar Dados</button>
+                    <button class="btn-Updt" onclick=" Atualizar() ">Editar Dados</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+<script src="../../Global/menu.js"></script>
+<script src="../../Global/menuData.js"></script>
+
+</html>

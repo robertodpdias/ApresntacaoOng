@@ -1,0 +1,194 @@
+@import url("../../Global/globalHeaderMenu.css");
+* {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+
+.cards {
+    display: flex;
+    height: 70vh;
+    width: 70vw;
+    box-shadow: 4px 5px 5px 4px rgba(0, 0, 0, 0.288);
+}
+
+.card {
+    background-color: #166B8A;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrar-cards {
+    height: 100%;
+    width: 100%;
+}
+
+.cardForm {
+    width: 100%;
+    height: 100%;
+}
+
+.familia {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.familia h1 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #e5e5e5;
+    border-radius: 50%;
+    color: #166B8A;
+    font-weight: bold;
+}
+
+.famform {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.famform ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.famform input {
+    width: 25%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 10vw;
+    height: 7vh;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font: 1.2em sans-serif;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+    background-color: #166B8A;
+    box-shadow: none;
+    transition: all 0.25s;
+    padding: 0 0px 0px 7px;
+    color: white;
+}
+
+.styleBall-bottom-right {
+    position: fixed;
+    width: 11%;
+    background-color: #166B8A;
+    height: 200px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 0%;
+    z-index: 1;
+    left: 78.5%;
+    bottom: 6.2%;
+    opacity: 0.7;
+}
+
+.styleBall-bottom-left {
+    position: fixed;
+    background-color: #cecece;
+    width: 11%;
+    height: 200px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    z-index: 1;
+    right: 78.5%;
+    bottom: 6.62%;
+    opacity: 0.7;
+}
+
+.styleBall-top-left {
+    position: fixed;
+    background-color: #cecece;
+    width: 11%;
+    height: 200px;
+    border-bottom-right-radius: 50%;
+    z-index: 1;
+    right: 78.5%;
+    top: 17.62%;
+    opacity: 0.7;
+}
+
+@media(max-width:900px) {
+    .btn {
+        width: 15vw;
+        height: 7vh;
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        font: 1.2em sans-serif;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    .btn:hover {
+        background-color: #166B8A;
+        box-shadow: none;
+        transition: all 0.25s;
+        padding: 0 0px 0px 7px;
+        color: white;
+    }
+    .famform {
+        display: flex;
+        width: 100%;
+        height: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .famform ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    .famform input {
+        width: 50%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}

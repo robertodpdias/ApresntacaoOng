@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="getfunc(),list(),getFamiliares()">
+    <header>
+        <div class="header">
+            <ul class="nav-bar">
+                <li>
+                    <h2>Casa Acolhedora Irmã Antonia</h2>
+                </li>
+
+            </ul>
+        </div>
+
+    </header>
+    <section>
+        <div class="menuJS down" onclick="abrirMenu()">
+            <img src="../../Assets/icones/hamburger.png" alt="Teste">
+        </div>
+        <div class="menucontent">
+            <div class="user">
+                <ul class="useritens">
+                    <li onclick="closeMenu()">
+                        <h2>X</h2>
+                    </li>
+                    <li><img src="../../Assets/icones/user.png" alt="user" class="userimg"></li>
+                    <li>
+                        <p class="Username">Usuario</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul class="pageList">
+                    <li class="Assistencia">
+                        <p>Assistencia</p>
+                    </li>
+                    <li class="Assistidos">
+                        <p>Assitidos</p>
+                    </li>
+                    <li class="Funcionario">
+                        <p>Funcionarios</p>
+                    </li>
+                    <li class="Lancamentos">
+                        <p>Financeiro</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="imgitens">
+                <ul class="imglist">
+                    <li><img src="../../Assets/icones/gear.png" alt="" class="config"></li>
+                    <li><img src="../../Assets/icones/logout.png" alt="" class="logout"></li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="card">
+
+                <div class="cardAssistido">
+                    <div class="fotos">
+                        <ul>
+                            <li>
+                                <img src="../../Assets/icones/user.png" alt="" id="assistidoAntes">
+                                <p>Foto de Cadastro</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="../../Assets/icones/user.png" alt="User" id="assistidoDepois">
+                                <p class="adcFoto">Foto Atualizada</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="dadosAssistido">
+                        <div class="telaEsquerda">
+                            <ul class="dadosPessoais">
+                                <h1>Informações do Assistido</h1>
+                                <ul class="nomeCompleto">
+                                    <li>
+                                        <p>Nome Completo:</p>
+                                    </li>
+                                    <li>
+                                        <p class="nomeCom">"Josue Francisco de Assis Moreira"</p>
+                                    </li>
+                                </ul>
+                                <ul class="nomeSocial">
+                                    <li>
+                                        <p>Nome Social:</p>
+                                    </li>
+                                    <li>
+                                        <p class="nomeSoc">Ivone</p>
+                                    </li>
+                                </ul>
+                                <ul class="rg">
+                                    <li>
+                                        <p>RG:</p>
+                                    </li>
+                                    <li>
+                                        <p class="rg-con">"53.634.432-3"</p>
+                                    </li>
+                                </ul>
+                                <ul class="cpf">
+                                    <li>
+                                        <p>CPF:</p>
+                                    </li>
+                                    <li>
+                                        <p class="cpf-con">"402.245.698-13"</p>
+                                    </li>
+                                </ul>
+                                <ul class="nascimento">
+                                    <li>
+                                        <p>Nascimento:</p>
+                                    </li>
+                                    <li>
+                                        <p class="data">"10/05/2001"</p>
+                                    </li>
+                                </ul>
+                                <ul class="cartCidadao">
+                                    <li>
+                                        <p>Cartão Cidadão:</p>
+                                    </li>
+                                    <li>
+                                        <p class="cartcid">"123321123"</p>
+                                    </li>
+                                </ul>
+                                <ul class="cartaoSus">
+                                    <li>
+                                        <p>Cartão Sus:</p>
+                                    </li>
+                                    <li>
+                                        <p class="cartSus">"123321123"</p>
+                                    </li>
+                                </ul>
+                                <ul class="estadoCivil">
+                                    <li>
+                                        <p>Estado Civil:</p>
+                                    </li>
+                                    <li>
+                                        <p class="getEstCiv">"123321123"</p>
+                                    </li>
+                                </ul>
+                                <ul class="sexo">
+                                    <li>
+                                        <p>Sexo:</p>
+                                    </li>
+                                    <li>
+                                        <p class="sex">"Masculino"</p>
+                                    </li>
+                                </ul>
+                                <ul class="Antecedente">
+                                    <li>
+                                        <p>Antecedente Criminal:</p>
+                                    </li>
+                                    <li>
+                                        <p class="ant"></p>
+                                    </li>
+                                </ul>
+
+                            </ul>
+                            <div class="btn-Updt">
+                                <button class="btn" id="telaUPDT">Editar Informações</button>
+                            </div>
+                        </div>
+
+                        <div class="dadosExtras">
+                            <div class="saude">
+                                <div class="pscoativo ">
+                                    <h2>Pscoativos <img src="../../Assets/icones/down-chevron.png" alt="" class="pscArrow" onclick="menuDownPsco() "></h2>
+                                    <ul class="psclist psDown">
+
+                                    </ul>
+                                </div>
+                                <div class="doencas doDown">
+                                    <h2>Saúde <img src="../../Assets/icones/down-chevron.png" alt="" class="doArrow" onclick="menuDownDoenca()"></h2>
+                                    <ul class="doclist doDown">
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="familia faDown">
+                                <h1>Familiar <img src="../../Assets/icones/down-chevron.png" alt="" onclick="menuDown()" class="faArrow"></h1>
+                                <div class="dadosFamilia">
+
+                                </div>
+                            </div>
+                            <button class="btn" id="telaFamiliar">Cadastrar Familiar</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="styleBall-bottom-right"></div>
+                <div class="styleBall-bottom-left"></div>
+                <div class="styleBall-top-right"></div>
+                <div class="styleBall-top-left"></div>
+            </div>
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+<script src="../../Global/menu.js"></script>
+<script src="../../Global/menuData.js"></script>
+
+</html>

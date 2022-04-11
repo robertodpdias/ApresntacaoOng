@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcoes Assistido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="getfunc()">
+    <header>
+        <div class="header">
+            <ul class="nav-bar">
+                <li>
+                    <h2>Casa Acolhedora Irmã Antonia</h2>
+                </li>
+
+            </ul>
+        </div>
+
+    </header>
+    <section>
+        <div class="menuJS down" onclick="abrirMenu()">
+            <img src="../../Assets/icones/hamburger.png" alt="Teste">
+        </div>
+        <div class="menucontent">
+            <div class="user">
+                <ul class="useritens">
+                    <li onclick="closeMenu()">
+                        <h2>X</h2>
+                    </li>
+                    <li><img src="../../Assets/icones/user.png" alt="user" class="userimg"></li>
+                    <li>
+                        <p class="Username">Usuario</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul class="pageList">
+                    <li class="Assistencia">
+                        <p>Assistencia</p>
+                    </li>
+                    <li class="Assistidos">
+                        <p>Assitidos</p>
+                    </li>
+                    <li class="Funcionario">
+                        <p>Funcionarios</p>
+                    </li>
+                    <li class="Lancamentos">
+                        <p>Financeiro</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="imgitens">
+                <ul class="imglist">
+                    <li><img src="../../Assets/icones/gear.png" alt="" class="config"></li>
+                    <li><img src="../../Assets/icones/logout.png" alt="" class="logout"></li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="infoAssistido">
+                    <p>Ver Assistidos</p>
+                </div>
+                <div class="addAssistido">
+                    <p>Cadastrar Assistido</p>
+                </div>
+            </div>
+            <div class="styleBall-bottom-right"></div>
+            <div class="styleBall-bottom-left"></div>
+            <div class="styleBall-top-right"></div>
+            <div class="styleBall-top-left"></div>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+<script src="../../Global/menu.js"></script>
+<script src="../../Global/menuData.js"></script>
+
+</html>

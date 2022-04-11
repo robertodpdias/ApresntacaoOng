@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="emptyStore() ">
+    <section>
+        <div class="cards">
+            <div class="cardImg">
+                <img src="../Assets/icones/logo.png" alt="" class="">
+            </div>
+            <div class="login-cards">
+                <div class="cardForm">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="text" placeholder="E-mail..." name="email" class="email">
+                        <div class="look">
+                            <input type="password" placeholder="Senha..." name="senha" class="senha">
+                            <img src="../Assets/icones/view.png" alt="" class="olhar" onclick="olharSenha()">
+                        </div>
+                        <div class="rec-senha">
+                            <p>Esqueci minha senha </p>
+                        </div>
+                        <button type="button" class="btnLog" onClick="conectar()">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,783 @@
+@import url("../../Global/globalHeaderMenu.css");
+body {
+    overflow: hidden;
+}
+
+.ham {
+    width: 50px
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.foto {
+    width: 100px
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    box-shadow: 15px 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Assiscard {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Assiscard h1 {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formAssis {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around
+}
+
+.inputs {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.inputs input {
+    display: flex;
+    margin-right: 20px;
+}
+
+.inputDados {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    background-color: rgba(22, 107, 138, 0.2);
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+}
+
+.inputDados input {
+    width: 100%;
+    margin-right: 0.2rem;
+}
+
+.Assiscard h1 {
+    height: 7%;
+    font-weight: bold;
+}
+
+.Sex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 2rem
+}
+
+.Sex ul {
+    height: 100%;
+    display: flex;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.Sex ul input[type="checkbox"] {
+    height: 20px;
+    width: 20px
+}
+
+.Sex ul li {
+    margin-right: 0.5rem;
+}
+
+.sexstyle {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sexstyle li {
+    width: 20%;
+}
+
+.sexstyle li:nth-child(2),
+.sexstyle li:nth-child(4) {
+    margin-right: 2em
+}
+
+.Famcard {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userform {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.userform ul {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.outros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listadrogas p,
+.listadoencas p {
+    font-size: 14px;
+}
+
+.listadrogas,
+.listadoencas {
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+    overflow-y: scroll;
+    font-size: 12px;
+    display: none;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.listadoencas ul,
+.listadrogas ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.listadoencas p,
+.listadrogas p {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 1rem;
+}
+
+.pscoativos,
+.saude {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+.listadrogas,
+.listadoencas {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.listadrogas ul,
+.listadoencas ul {
+    height: 100%;
+    width: 100%;
+}
+
+.pscoativos img,
+.saude img {
+    width: 15px;
+    margin-left: 1rem;
+}
+
+.anexo {
+    width: 100%;
+    text-align: center;
+}
+
+.anexo input {
+    width: 50%;
+    text-align: center;
+}
+
+.anexo ul li:first-child {
+    margin-bottom: 1rem;
+}
+
+.anexo p {
+    width: 100%;
+    font-weight: bold;
+}
+
+.styleBall-bottom-right {
+    position: fixed;
+    width: 11%;
+    background-color: #166B8A;
+    height: 20%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 0%;
+    z-index: -1;
+    left: 80%;
+    bottom: 5%;
+    opacity: 0.2;
+}
+
+.styleBall-bottom-left {
+    position: fixed;
+    background-color: #166B8A;
+    width: 11%;
+    height: 20%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    z-index: -1;
+    right: 80%;
+    bottom: 5%;
+    opacity: 0.2;
+}
+
+.styleBall-top-left {
+    position: fixed;
+    background-color: #166B8A;
+    width: 11%;
+    height: 20%;
+    border-bottom-right-radius: 50%;
+    z-index: -1;
+    right: 80%;
+    top: 11%;
+    opacity: 0.2;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #166B8A;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font: 1.2em sans-serif;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+    background-color: #166B8A;
+    box-shadow: none;
+    transition: all 0.25s;
+    padding: 0 0px 0px 7px;
+    color: white;
+}
+
+@media (max-width: 1623px) {
+    p,
+    h1,
+    h2,
+    h3 {
+        font-size: 16px;
+    }
+    .inputDados {
+        width: 100%
+    }
+    .Sex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2rem
+    }
+    .Sex ul li {
+        margin-right: 0.5rem;
+    }
+    .sexstyle {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sexstyle li {
+        width: 20%;
+    }
+    .pscoativos,
+    .saude {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 100px;
+        border: 1px solid black;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 10px;
+    }
+    .familia {
+        width: 90%;
+    }
+    .familia input {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1075px) {
+    p,
+    h2,
+    h1 {
+        font-size: 14px;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+    }
+    section {
+        width: 100vw;
+        height: 100vh;
+    }
+    .inputDados {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .inputDados input {
+        width: 100%;
+    }
+    .foto {
+        width: 50px
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+    .Assiscard {
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid black;
+    }
+    .formAssis {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .inputs {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        align-self: flex-start;
+    }
+    .inputs input {
+        display: flex;
+        width: 70%;
+        margin-right: 20px;
+    }
+    .Sex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-bottom: 2rem
+    }
+    .Sex ul {
+        height: 100%;
+        display: flex;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
+    }
+    .Sex ul input[type="checkbox"] {
+        height: 20px;
+        width: 20px
+    }
+    .Sex ul li {
+        margin-right: 0.5rem;
+    }
+    .sexstyle {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sexstyle li {
+        width: 20%;
+    }
+    .sexstyle li:nth-child(2),
+    .sexstyle li:nth-child(4) {
+        margin-right: 2em
+    }
+    .Famcard {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .userform {
+        display: flex;
+        align-self: flex-start;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .userform ul {
+        display: flex;
+        align-self: flex-start;
+        align-items: center;
+        width: 40%;
+        justify-content: space-around;
+    }
+    .familia {
+        width: 90%;
+    }
+    .famform {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        align-self: center;
+    }
+    .famform input {
+        display: flex;
+        width: 40%;
+        margin-right: 20px;
+    }
+    .pscoativos,
+    .saude {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 100px;
+        border: 1px solid black;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 10px;
+    }
+    .anexo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .anexo ul {
+        width: 70%;
+        text-align: center;
+    }
+    .anexo ul li:first-child {
+        margin-bottom: 1rem;
+    }
+    .anexo input {
+        width: 100%;
+    }
+    .btn {
+        width: 10vw;
+        height: 5vh;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        font: 1.2em sans-serif;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    .btn:hover {
+        box-shadow: none;
+        transition: all 0.25s;
+        padding: 0 0px 0px 7px;
+    }
+}
+
+@media (max-width:1000px) {
+    p,
+    h2,
+    h1 {
+        font-size: 10px;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .styleBall-bottom-right {
+        position: fixed;
+        width: 11%;
+        background-color: #166B8A;
+        height: 20%;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 0%;
+        z-index: -1;
+        left: 80%;
+        bottom: 5%;
+        opacity: 0.2;
+        display: none;
+    }
+    .styleBall-bottom-left {
+        position: fixed;
+        background-color: #166B8A;
+        width: 11%;
+        height: 20%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 0%;
+        z-index: -1;
+        right: 80%;
+        bottom: 5%;
+        opacity: 0.2;
+        display: none;
+    }
+    .styleBall-top-left {
+        position: fixed;
+        background-color: #166B8A;
+        width: 11%;
+        height: 20%;
+        border-bottom-right-radius: 50%;
+        z-index: -1;
+        right: 80%;
+        top: 11%;
+        opacity: 0.2;
+        display: none;
+    }
+    p,
+    h1,
+    h2 {
+        font-size: 12px;
+    }
+    .card {
+        width: 100%;
+        box-shadow: none
+    }
+    .inputDados {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: transparent
+    }
+    .inputDados input {
+        width: 70%;
+        height: 22px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .outros {
+        display: flex;
+        height: 60%;
+    }
+    .Famcard {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .pscoativos,
+    .saude {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        border: 1px solid black;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .btn {
+        width: 20vw;
+        height: 5vh;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        font: 1.2em sans-serif;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+    .btn:hover {
+        box-shadow: none;
+        transition: all 0.25s;
+        padding: 0 0px 0px 7px;
+    }
+     ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: #166B8A;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 765px) {
+    .foto {
+        width: 45px;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px;
+    }
+    .Assiscard {
+        width: 100%;
+        height: 55%;
+        border: none;
+    }
+    .Assiscard h1 {
+        display: none;
+    }
+    .inputDados {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .inputs input {
+        width: 90%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .Sex {
+        width: 100%;
+        height: 10%;
+        align-self: center;
+        display: flex;
+        margin: 0;
+    }
+    .sexstyle {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0rem;
+    }
+    .sexstyle li {
+        width: 0.2%;
+    }
+    .Famcard {
+        width: 100%;
+        height: 30%;
+    }
+    .outros {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .pscoativos,
+    .saude {
+        width: 40%;
+        height: 105px;
+        justify-content: space-around;
+    }
+    .listadrogas ul,
+    .listadoencas ul {
+        width: 100%;
+        height: 10px;
+        display: flex;
+        justify-content: none;
+        align-items: none;
+        padding: 0;
+        margin: 0;
+    }
+    section {
+        width: 100vw;
+        height: 100vh;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+    .userform {
+        height: 12%;
+    }
+    .btn {
+        width: 40%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}

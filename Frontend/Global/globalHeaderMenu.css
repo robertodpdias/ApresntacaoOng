@@ -1,0 +1,182 @@
+@import url("../../Global/globalHeader.css");
+p,
+h1,
+h2,
+h3 {
+    font-size: 1em
+}
+
+.menuJS {
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.menuJS img {
+    width: 50px;
+    height: 50px;
+}
+
+li h2 {
+    cursor: pointer;
+}
+
+li h2:hover {
+    color: #fff;
+}
+
+.userimg {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.config {
+    display: none;
+}
+
+.ham {
+    width: 50px
+}
+
+.menuJS:hover {
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menucontent {
+    background-color: rgba(22, 107, 138, 0.1);
+    height: 90%;
+    width: 12%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 30px;
+    z-index: 2;
+}
+
+.user {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(22, 107, 138, 1);
+    border-top-right-radius: 40px;
+}
+
+.useritens {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.useritens h2 {
+    position: absolute;
+    top: 2%;
+    left: 80%;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.794);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.pageList {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pageList li:hover {
+    background-color: lightgray;
+    box-shadow: 4px 5px 5px 4px rgba(0, 0, 0, 0.288);
+    border-radius: 5px;
+    border-bottom: transparent;
+}
+
+.imgitens {
+    background-color: rgb(22, 107, 138);
+    width: 100%;
+    height: 20%;
+    border-bottom-right-radius: 30px;
+}
+
+.imglist {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imglist img {
+    width: 30px
+}
+
+.Assistencia,
+.Assistidos,
+.Funcionario,
+.Lancamentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 15%;
+    border-bottom: 0.5px solid black;
+}
+
+.Assistencia,
+.Lancamentos {
+    display: none;
+}
+
+@media (max-width:1366px) {
+    .pages p {
+        font-size: 14px
+    }
+}
+
+@media (max-width:1000px) {
+    .menuJS img {
+        width: 30px;
+        height: 30px
+    }
+    .menucontent {
+        width: 30%;
+    }
+}
+
+@media (max-width:1000px) {
+    .menuJS img {
+        width: 30px;
+        height: 30px
+    }
+    .menucontent {
+        width: 30%;
+    }
+}

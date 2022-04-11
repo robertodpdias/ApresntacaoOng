@@ -1,0 +1,181 @@
+@import url("../Global/globalHeaderMenu.css");
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menucontent {
+    top: 0%;
+    left: 0%;
+}
+
+section {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    position: fixed;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container {
+    width: 70%;
+    height: 80%;
+    background-color: #166b8a;
+    display: flex;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.uppercards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cardAssistido,
+.cardFuncionario,
+.cardAssistencia {
+    height: 10;
+    padding: 7vh 5vw 7vh 5vw;
+    background-color: #e5e5e5;
+    text-align: center;
+    box-shadow: 4px 5px 5px rgba(46, 46, 46, 0.445);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.cardLancamento {
+    height: 10;
+    padding: 7vh 5vw 7vh 5vw;
+    background-color: #e5e5e5;
+    text-align: center;
+    box-shadow: 4px 5px 5px rgba(46, 46, 46, 0.445);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.lower-cards :hover,
+.uppercards :hover {
+    box-shadow: none;
+    background-color: gray;
+    padding: auto;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #005c7e;
+    color: #fff;
+}
+
+.styleBall-bottom-right {
+    position: fixed;
+    width: 11%;
+    background-color: white;
+    height: 150px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 30px;
+    z-index: 1;
+    left: 74%;
+    bottom: 9%;
+    opacity: 0.4;
+}
+
+.styleBall-bottom-left {
+    position: fixed;
+    background-color: white;
+    width: 11%;
+    height: 150px;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    z-index: 1;
+    right: 74%;
+    bottom: 9%;
+    opacity: 0.4;
+}
+
+@media (max-width: 900px) {
+    .cards-container {
+        width: 70%;
+    }
+    p {
+        font-size: 15px
+    }
+    .cardAssistido,
+    .cardFuncionario,
+    .cardAssistencia {
+        height: 10;
+        padding: 5vh 3vw 5vh 3vw;
+        background-color: #e5e5e5;
+        text-align: center;
+        box-shadow: 4px 5px 5px rgba(46, 46, 46, 0.445);
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .cardLancamento {
+        height: 10;
+        padding: 5vh 3vw 5vh 3vw;
+        background-color: #e5e5e5;
+        text-align: center;
+        box-shadow: 4px 5px 5px rgba(46, 46, 46, 0.445);
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .uppercards {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .lower-cards {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cardAssistido,
+    .cardFuncionario,
+    .cardAssistencia {
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .cardFuncionario,
+    .cardAssistencia {
+        margin-top: 1em
+    }
+    .cardLancamento {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .cardLancamento {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Assistidos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="getAssistido(),getfunc()">
+    <header>
+        <div class="header">
+            <ul class="nav-bar">
+                <li>
+                    <h2>Casa Acolhedora Irmã Antonia</h2>
+                </li>
+
+            </ul>
+        </div>
+
+    </header>
+    <section>
+        <div class="menuJS down" onclick="abrirMenu()">
+            <img src="../../Assets/icones/hamburger.png" alt="Teste">
+        </div>
+        <div class="menucontent">
+            <div class="user">
+                <ul class="useritens">
+                    <li onclick="closeMenu()">
+                        <h2>X</h2>
+                    </li>
+                    <li><img src="../../Assets/icones/user.png" alt="user" class="userimg"></li>
+                    <li>
+                        <p class="Username">Usuario</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul class="pageList">
+                    <li class="Assistencia">
+                        <p>Assistencia</p>
+                    </li>
+                    <li class="Assistidos">
+                        <p>Assitidos</p>
+                    </li>
+                    <li class="Funcionario">
+                        <p>Funcionarios</p>
+                    </li>
+                    <li class="Lancamentos">
+                        <p>Financeiro</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="imgitens">
+                <ul class="imglist">
+                    <li><img src="../../Assets/icones/gear.png" alt="" class="config"></li>
+                    <li><img src="../../Assets/icones/logout.png" alt="" class="logout"></li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="Assiscard">
+                    <h1>Cadastrar Assistido</h1>
+                    <div class="formAssis">
+
+                        <div class="userform">
+                            <ul>
+                                <li><img src="../../Assets/icones/user.png" alt="User" class="foto"></li>
+                                <li>
+                                    <p class="adcFoto">Adicionar Foto 📸</p>
+                                    <input type="file" name="" id="inpFoto" hidden accept="image/png, image/gif, image/jpeg" /></li>
+                            </ul>
+                        </div>
+
+                        <div class="inputs">
+                            <div class="inputDados">
+                                <div class="nome-Completo">
+                                    <input type="text" placeholder="Nome completo" class="nome">
+                                </div>
+                                <div class="antecedente">
+                                    <input type="text" placeholder="Antecedente Criminal" class="ant">
+                                </div>
+                                <div class="nome-social">
+                                    <input type="text" placeholder="Nome Social..." class="nome-soc">
+                                </div>
+                                <div class="Rg">
+                                    <input type="text" placeholder="RG..." class="rg">
+                                </div>
+                                <div class="cpf-as">
+                                    <input type="text" placeholder="CPF..." class="cpf">
+                                </div>
+                                <div class="Nascimento">
+                                    <input type="text" placeholder="Nascimento DD/MM/AAAA..." class="nasc">
+                                </div>
+                                <div class="Estado">
+                                    <input type="text" placeholder="Estado civil..." class="estado">
+                                </div>
+                                <div class="Naturalidade">
+                                    <input type="text" placeholder="Naturalidade..." class="naturalidade">
+                                </div>
+                                <div class="CartaoCidadao">
+                                    <input type="text" placeholder="Cartão cidadão..." class="cartCid">
+                                </div>
+                                <div class="CartaoSus">
+                                    <input type="text" placeholder="Cartão do SUS..." class="cartSus">
+                                </div>
+                            </div>
+                            <div class="Sex">
+                                <p><b>Sexo:</b></p>
+                                <ul class="sexstyle">
+                                    <li>
+                                        <p> Masculino</p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="" id="Masculino">
+
+                                    </li>
+
+                                    <li>
+                                        <p>Feminino</p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="" id="Feminino">
+                                    </li>
+
+                                    <li>
+                                        <p>Outro</p>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" name="" id="Outro">
+                                    </li>
+                                </ul>
+                                <input type="button" value="Salvar" class="btn" onclick="cadastrarAssistido()">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="styleBall-bottom-right"></div>
+        <div class="styleBall-bottom-left"></div>
+        <div class="styleBall-top-right"></div>
+        <div class="styleBall-top-left"></div>
+    </section>
+
+</body>
+<script src="../../Global/menu.js"></script>
+<script src="../../Global/menuData.js"></script>
+<script src="script.js"></script>
+
+</html>

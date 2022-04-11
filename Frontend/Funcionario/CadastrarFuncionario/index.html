@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Funcionario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="getfunc()">
+    <header>
+        <div class="header">
+            <ul class="nav-bar">
+                <li>
+                    <h2>Casa Acolhedora Irmã Antonia</h2>
+                </li>
+
+            </ul>
+        </div>
+
+    </header>
+    <section>
+        <div class="menuJS down" onclick="abrirMenu()">
+            <img src="../../Assets/icones/hamburger.png" alt="Teste">
+        </div>
+        <div class="menucontent">
+            <div class="user">
+                <ul class="useritens">
+                    <li onclick="closeMenu()">
+                        <h2>X</h2>
+                    </li>
+                    <li><img src="../../Assets/icones/user.png" alt="user" class="userimg"></li>
+                    <li>
+                        <p class="Username">Usuario</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="pages">
+                <ul class="pageList">
+                    <li class="Assistencia">
+                        <p>Assistencia</p>
+                    </li>
+                    <li class="Assistidos">
+                        <p>Assitidos</p>
+                    </li>
+                    <li class="Funcionario">
+                        <p>Funcionarios</p>
+                    </li>
+                    <li class="Lancamentos">
+                        <p>Financeiro</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="imgitens">
+                <ul class="imglist">
+                    <li><img src="../../Assets/icones/gear.png" alt="" class="config"></li>
+                    <li><img src="../../Assets/icones/logout.png" alt="" class="logout"></li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="styleBall-bottom-right"></div>
+                <div class="styleBall-bottom-left"></div>
+                <div class="styleBall-top-right"></div>
+                <div class="styleBall-top-left"></div>
+                <ul>
+
+                    <li><img src="../../Assets/icones/user.png" alt="User" id="Funcfoto"></li>
+                    <li>
+                        <p class="adcFoto" style="font-size:12px;font-weight: bold;text-decoration: underline;">Selecionar nova Foto 📸</p>
+                        <input type="file" name="" id="inpFoto" hidden accept="image/png, image/gif, image/jpeg" />
+                    </li>
+                </ul>
+            </div>
+            <div class="cardForm">
+                <div class="familia">
+                    <div class="famform">
+                        <div class="DadosFuncionario">
+                            <ul>
+                                <input type="text" class="getNome" placeholder="Nome...">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getEmail" placeholder="Email...">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getMatricula" placeholder="Matricula...">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getRG" placeholder="RG...">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getCPF" placeholder="CPF...">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getDataNasc" placeholder="Data de Nascimento... ">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getCargo" placeholder="Cargo">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getSexo" placeholder="Sexo">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getDataAdmissao" placeholder="Data de Admissão">
+                            </ul>
+                            <ul>
+
+                                <input type="text" class="getSenha" placeholder="Senha">
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="btn-div">
+                    <button class="btn" onclick=" cadastrarFunc() ">Cadastrar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+<script src="../../Global/menu.js"></script>
+<script src="../../Global/menuData.js"></script>
+
+</html>
