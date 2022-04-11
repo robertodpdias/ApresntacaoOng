@@ -1,0 +1,27 @@
+﻿	
+		
+	id_comorbidades 
+            // 01 - HIV
+            // 02 - Hipertensão
+            // 03 - Diabetes
+            // 04 - Depressão
+            // 05 - Maconha
+            // 06 - Cocaína 
+            // 07 - Crack
+            // 08 - OX
+            // 09 - Álcool
+
+
+	id_itens
+
+	// 01 - Banho
+	// 02 - Café M.
+	// 03 - Café T.
+	// 04 - Almoço 
+	// 05 - Jantar 
+	// 06 - Ceia
+	// 07 - Pernoite
+	// 08 - Roupas 
+	// 09 - Sapato 
+	// 10 - Kit higiene 
+	// 11 - Rede 

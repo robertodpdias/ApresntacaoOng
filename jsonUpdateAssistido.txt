@@ -1,0 +1,30 @@
+
+Rota: http://localhost:3000/assistido/update
+
+{	
+	"id_assistido": 2,
+	"nome_completo": "Pedro Lima Santos",
+	"nome_social": "",
+	"rg": "26.654.654-6",
+	"cpf": "656.364.641-65",
+	"antecedente_criminal": "",
+	"data_nascimento": "1996-03-23",
+	"estado_civil": "Solteiro",
+	"naturalidade": "Brasil",
+	"sexo": "masculino",
+	"cartao_cidadao": "",
+	"cartao_sus": "",
+	"foto_antes": "",
+	"foto_depois": ""
+}
+
+
+Update senha
+
+Rota: http://localhost:3000/funcionario/reset_senha
+
+{	
+	"email": "pedroh@live.com",
+	"senha_antiga": "12345678",
+	"nova_senha": "asd123"
+}
